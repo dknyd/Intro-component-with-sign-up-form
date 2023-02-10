@@ -1,0 +1,182 @@
+/* ALL VIEW */
+:root {
+	--Desaturated-Red: hsl(0, 36%, 70%);
+	--Red: hsl(0, 100%, 74%) ;
+	--Green: hsl(154, 59%, 51%);
+	--Blue: hsl(248, 32%, 49%);
+	--Dark-Blue: hsl(249, 10%, 26%);
+	--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--Red);
+	font-family: 'Poppins', sans-serif;
+}
+
+.mainContainer{
+	display: flex;
+}
+
+.firstContainer{
+	color:white;
+}
+
+.secondContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:white;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	width: 80%;
+	border-radius: 0.8rem;
+	box-shadow: 0px 10px 15px black;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.priceContainer{
+	background-color: var(--Blue);
+	color: white;
+	text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 4rem;
+	height: 4rem;
+	border-radius: 0.8rem;
+	box-shadow: 0px 10px 15px black;
+	padding-top: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	width: 80%;
+}
+
+.span1{
+	font-weight: 700;	
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+	border-radius: 0.8rem;
+}
+
+.paragraph2{
+	color:grey;
+	font-size: 12px;
+	text-align: center;
+}
+
+.span2{
+	color: var(--Red);
+	font-weight: 700;
+}
+
+
+	
+	
+
+.button{
+	background-color: var(--Green);
+	color: white;
+	font-weight: 700;
+}
+
+
+
+
+
+/* MOBILE VIEW */
+@media screen and (max-width: 1000px) {
+	body{
+	background-image: url(images/bg-intro-mobile.png) ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+	.mainContainer{
+		flex-direction: column;
+		max-width: 25rem;
+		align-items: center;
+	}
+
+	.secondContainer{
+		
+	}
+	
+
+	.textContainer{
+		text-align: center;
+	}
+
+	.priceContainer{
+		width: 80%;
+	}
+
+	form{
+		min-width: 20rem;
+		max-width: 25rem;
+	}
+	
+	input{
+		width: 100%;
+		height: 5rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	
+	
+}
+
+
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 1000px){
+	body{
+		background-image: url(images/bg-intro-desktop.png);
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+}
+	
+	.mainContainer{
+		flex-direction: row;
+		display: grid;
+		grid-template-columns: 25rem 35rem;
+		grid-template-rows: auto auto 1fr;
+		padding: 3rem;
+	}
+
+	.firstContainer{
+		margin-top: 5rem;
+		grid-area: 2/1/3/2;
+	}
+
+	.priceContainer{
+		grid-area: 1/2/2/3;
+		margin-left: 1rem;
+	}
+
+	.secondContainer{
+		grid-area: 2/2/3/3
+	}
+
+	form{
+		min-width: 20rem;
+		max-width: 40rem;
+	}
+
+	input{
+		min-width: 30rem;
+		max-width: 40rem;
+		height: 5rem;
+		margin: 1rem;
+		font-weight: 700;
+	}
+}

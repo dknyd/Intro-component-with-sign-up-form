@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Frontend Mentor | Intro component with sign up form</title>
+	</head>
+	<body>
+<!-- MAIN -->
+		<div class="mainContainer">
+			<div class="firstContainer">
+				<!-- TEXT -->
+				<div class="textContainer">
+					<h1>
+						Learn to code by watching others
+					</h1>
+					<h3 class="paragraph1">
+						See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+					</h3>
+				</div>
+			</div>
+	
+	<!-- PRICE -->
+			<div class="priceContainer">
+					<span class="span1"> Try it free 7 days </span>then $20/mo. thereafter
+			</div>
+	<!-- FORM -->
+			<div class="secondContainer">
+				<form>
+					<div class="errorContainerFirstName">
+						<input type="text" class="firstName" placeholder="     First Name"/>
+					</div>
+					<div class="errorContainerLastName">
+						<input type="text" class="lastName" placeholder="     Last Name"/>
+					</div>
+					<div class="errorContainerEmailAddress">
+						<input type="email" class="emailAddress" placeholder="     Email Address"/>
+					</div>
+					<div class="errorContainerPassword">
+						<input type="password" class="password" placeholder="     Password"/>
+					</div>
+					<input type="button" onclick="activeState()" class="button" value="CLAIM YOUR FREE TRIAL"/>
+				</form>
+				<p class="paragraph2">
+					By clicking the button, you are agreeing to our <span class="span2"> Terms and Services </span> 
+				</p>
+		  	</div>
+	</div>
+	 <script src="script.js"></script>
+	</body>
+</html>
